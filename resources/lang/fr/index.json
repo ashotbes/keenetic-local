@@ -1,7 +1,3 @@
 {
-    "test": "Bonjour Crowdin monde !",
-    "watcher-test": "Ceci est un test de l'accroche du spectateur",
-    "translate": "La demande d'extraction a été fusionnée et clôturée avec succès\nVous êtes prêt : la branche l10n_main2 peut être supprimée en toute sécurité.",
-    "fox": "Le renard brun saute rapidement sur le chien paresseux",
-    "test2": "Dernier test avant i18n"
+    "navbar": "KeeneticOS\nHome Solutions\nBusiness Solutions\nISP\nProducts\nHow It Works\nSupport"
 }
