@@ -1,5 +1,6 @@
 {
     "test": "Bonjour Crowdin monde !",
     "watcher-test": "Ceci est un test de l'accroche du spectateur",
-    "translate": "La demande d'extraction a été fusionnée et clôturée avec succès\nVous êtes prêt : la branche l10n_main2 peut être supprimée en toute sécurité."
+    "translate": "La demande d'extraction a été fusionnée et clôturée avec succès\nVous êtes prêt : la branche l10n_main2 peut être supprimée en toute sécurité.",
+    "fox": "The quick brown fox jumps over the lazy dog"
 }
