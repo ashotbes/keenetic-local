@@ -1,5 +1,6 @@
 {
     "test": "Hello Crowdin world!",
     "watcher-test": "This is test of watcher hook",
-    "sometest" : "This is tests of watcherasasasdask"
+    "sometest" : "This is tests of watcherasasasdask",
+    "test2": "test212"
 }
