@@ -1,0 +1,62 @@
+{
+    "navbar": {
+        "keenetic_os": "KeeneticOS",
+        "home_solutions": "Heimlösungen",
+        "business_solutions": "Geschäftslösungen",
+        "isp": "ISP",
+        "products": "Produkte",
+        "how_it_works": "So funktioniert es",
+        "support": "Unterstützung"
+    },
+
+    "product": {
+        "name": "Keenetic Hero",
+        "code": "KN-1011",
+        "sections": {
+            "productImage": "Produktbild",
+            "benefits": "VORTEILE",
+            "features": "MERKMALE",
+            "keeneticOS": "KEENETIC OS",
+            "images": "BILDER",
+            "specifications": "SPEZIFIKATIONEN",
+            "support": "UNTERSTÜTZUNG"
+        },
+        "description": {
+            "title": "Wo Stabilität auf Geschwindigkeit trifft",
+            "text": "Ein wahrhaft vielseitiger Gigabit-Router mit Mesh-Wi-Fi 6 AX1800 zur Verbindung von drahtlosen Clients mit praktischen Geschwindigkeiten von bis zu 900 Mbps, plus einem unabhängigen Spektrumanalysator, der kontinuierlich die Luftwellen überwacht und nach freieren Kanälen sucht. Bereit für die Glasfaser-Internetverbindung über ein optionales SFP-Modul und für den Aufbau eines Mesh-Wi-Fi-Systems mit Gigabit-Rückkanal. Die beste Kombination aus Funktionalität, Leistung, einfacher Einrichtung und Preis für das Zuhause oder kleine Unternehmen."
+        },
+        "features": {
+            "title": "Definieren Sie Ihre digitalen Grenzen",
+            "points": [
+                "Intelligent. Sicher. Nahtlos.",
+                "Eine Vielzahl von Speicherlaufwerken, LTE-Modems und Druckern können über USB 3.0- und 2.0-Anschlüsse angeschlossen werden. 512 MB RAM gewährleisten einen stabilen gleichzeitigen Betrieb eines Medienservers, IntelliQoS-Service mit Traffic-Priorisierung nach Anwendung und die neueste Palette von VPN-Servern und -Clients, einschließlich IPsec und WireGuard mit Geschwindigkeiten von bis zu 200 Mbps."
+            ]
+        },
+        "technicalFeatures": {
+            "wifi": {
+                "title": "Wi-Fi 6 AX1800",
+                "description": "Ausgestattet mit der neuesten Wi-Fi 6-Technologie für schnellere Geschwindigkeiten, erhöhte Kapazität und bessere Leistung in dichten Umgebungen."
+            },
+            "usb": {
+                "title": "USB 3.0+2.0-Anschlüsse",
+                "description": "Nutzen Sie mehr mit Keenetic! Schließen Sie ein USB-Laufwerk an, um Netzwerk-Speicher für nahtloses Dateifreigeben und Backup zu aktivieren, erstellen Sie einen Medienserver zum Streamen von Inhalten auf Smart-TVs oder bauen Sie eine private Cloud für sicheren Fernzugriff auf Ihre Daten."
+            },
+            "mesh": {
+                "title": "Whole Home & Mesh Wi-Fi",
+                "description": "Verabschieden Sie sich von Funklöchern mit unserer Mesh-Wi-Fi-Funktion, die es mehreren Geräten ermöglicht, nahtlos zusammenzuarbeiten und eine konsistente, robuste drahtlose Abdeckung in Ihrem gesamten Raum zu schaffen."
+            },
+            "sfp": {
+                "title": "SFP-Steckplatz",
+                "description": "Wir haben einen SFP-Steckplatz für die Glasfaseranbindung hinzugefügt, ideal für Unternehmen, die hohe Leistung und Kommunikationslösungen über große Entfernungen benötigen."
+            },
+            "multiWAN": {
+                "title": "Multi-WAN",
+                "description": "Aggregieren Sie mehrere Internetverbindungen, erhöhen Sie die gesamte Bandbreite und gewährleisten Sie durch Failover eine ständige Konnektivität."
+            },
+            "vpn": {
+                "title": "Mixed-VPN-Clients/Server",
+                "description": "Sichern Sie Ihre Online-Aktivitäten und genießen Sie die Flexibilität mehrerer VPN-Protokolle. Egal, ob Sie Ihre Privatsphäre schützen, remote arbeiten oder Geo-Blockierungen umgehen möchten, unser Produkt hat alles abgedeckt."
+            }
+        }
+    }
+}

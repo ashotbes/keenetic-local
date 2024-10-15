@@ -6,12 +6,12 @@
   <div class="container">
     <nav class="navbar">
       <ul class="navbar-list">
-        <li class="navbar-list__item"><a class="navbar-list__item-link" href="#">BENEFITS</a></li>
-        <li class="navbar-list__item"><a class="navbar-list__item-link" href="#">FEATURES</a></li>
-        <li class="navbar-list__item"><a class="navbar-list__item-link" href="#">KEENETICOS</a></li>
-        <li class="navbar-list__item"><a class="navbar-list__item-link" href="#">IMAGES</a></li>
-        <li class="navbar-list__item"><a class="navbar-list__item-link" href="#">SPECIFICATIONS</a></li>
-        <li class="navbar-list__item"><a class="navbar-list__item-link" href="#">SUPPORT</a></li>
+        <li class="navbar-list__item"><a class="navbar-list__item-link" href="#">{{ $t('product.sections.benefits') }}</a></li>
+        <li class="navbar-list__item"><a class="navbar-list__item-link" href="#">{{ $t('product.sections.features') }}</a></li>
+        <li class="navbar-list__item"><a class="navbar-list__item-link" href="#">{{ $t('product.sections.keeneticOS') }}</a></li>
+        <li class="navbar-list__item"><a class="navbar-list__item-link" href="#">{{ $t('product.sections.specifications') }}</a></li>
+        <li class="navbar-list__item"><a class="navbar-list__item-link" href="#">{{ $t('product.sections.images') }}</a></li>
+        <li class="navbar-list__item"><a class="navbar-list__item-link" href="#">{{ $t('product.sections.support') }}</a></li>
       </ul>
     </nav>
   </div>

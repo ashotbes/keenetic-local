@@ -22,41 +22,50 @@ class ProductController extends Controller
 
     public function index()
     {
-        $response = Http::withToken($this->apiToken)->get($this->apiUrl);
+        try {
+            $response = Http::withToken($this->apiToken)->get($this->apiUrl);
 
-        if ($response->successful()) {
-            $products = $response->json('data');
-            foreach ($products as &$product) {
-                $imageId = $product['images'];
+            if ($response->successful()) {
+                $products = $response->json('data');
+                foreach ($products as &$product) {
+                    $imageId = $product['images'];
 
-                $imageResponse = Http::withToken($this->apiToken)
-                    ->get("http://0.0.0.0:8055/assets/{$imageId}");
+                    $imageResponse = Http::withToken($this->apiToken)
+                        ->get("http://0.0.0.0:8055/assets/{$imageId}");
 
-                if ($imageResponse->successful()) {
-                    $imageData = $imageResponse->body();
+                    if ($imageResponse->successful()) {
+                        $imageData = $imageResponse->body();
 
-                    $imagePath = "images/products/{$imageId}.jpg";
-                    Storage::disk('public')->put($imagePath, $imageData);
+                        $imagePath = "images/products/{$imageId}.jpg";
+                        Storage::disk('public')->put($imagePath, $imageData);
 
-                    $product['image_url'] = asset("storage/{$imagePath}");
+                        $product['image_url'] = asset("storage/{$imagePath}");
+                    }
                 }
+
+                return inertia('App', ['products' => $products]);
+            } else {
+                return inertia('ErrorPage', ['message' => 'Failed to fetch products']);
             }
-
-            return inertia('App', ['products' => $products]);
+        } catch (Exception $e) {
+            return inertia('ErrorPage', ['message' => $e->getMessage()]);
         }
-
-        return response()->json(['error' => 'Failed to fetch products'], $response->status());
     }
 
     public function show($id)
     {
-        $response = Http::withToken($this->apiToken)->get($this->apiUrl . '/' . $id);
+        try {
+            $response = Http::withToken($this->apiToken)->get($this->apiUrl . '/' . $id);
 
-        if ($response->successful()) {
-            $product = $response->json('data');
-            dd($product);
+            if ($response->successful()) {
+                $product = $response->json('data');
+
+                return inertia('ProductDetail', ['product' => $product]);
+            } else {
+                return inertia('ErrorPage', ['message' => 'Failed to fetch product']);
+            }
+        } catch (Exception $e) {
+            return inertia('ErrorPage', ['message' => $e->getMessage()]);
         }
-
-        return response()->json(['error' => 'Failed to fetch product'], $response->status());
     }
 }

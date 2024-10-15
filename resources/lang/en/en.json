@@ -1,0 +1,62 @@
+{
+    "navbar": {
+        "keenetic_os": "KeeneticOS",
+        "home_solutions": "Home Solutions",
+        "business_solutions": "Business Solutions",
+        "isp": "ISP",
+        "products": "Products",
+        "how_it_works": "How It Works",
+        "support": "Support"
+    },
+
+    "product": {
+        "name": "Keenetic Hero",
+        "code": "KN-1011",
+        "sections": {
+            "productImage": "Product Image",
+            "benefits": "BENEFITS",
+            "features": "FEATURES",
+            "keeneticOS": "KEENETIC OS",
+            "images": "IMAGES",
+            "specifications": "SPECIFICATIONS",
+            "support": "SUPPORT"
+        },
+        "description": {
+            "title": "Where stability meets speed",
+            "text": "A truly versatile Gigabit router with Mesh Wi-Fi 6 AX1800 for connecting wireless clients at practical speeds of up to 900 Mbps, plus an independent spectrum analyser to continuously monitor the airwaves and search for more open channels. Ready for fibre Internet connectivity via an optional SFP module and for building a mesh Wi-Fi System with Gigabit backhaul. The best combination of functionality, performance, ease of setup and price for the home or small business."
+        },
+        "features": {
+            "title": "Define your digital boundaries",
+            "points": [
+                "Smart. Secure. Seamless.",
+                "A wide range of storage drives, LTE modems and printers can be connected via USB 3.0 and 2.0 ports. 512 MB of RAM ensures stable simultaneous operation of a media server, IntelliQoS service with traffic prioritisation by application, and the latest range of VPN servers and clients, including IPsec and WireGuard at speeds of up to 200 Mbps."
+            ]
+        },
+        "technicalFeatures": {
+            "wifi": {
+                "title": "Wi-Fi 6 AX1800",
+                "description": "Equipped with the latest Wi-Fi 6 technology for faster speeds, increased capacity and better performance in dense environments."
+            },
+            "usb": {
+                "title": "USB 3.0+2.0 ports",
+                "description": "Do more with Keenetic! Connect a USB drive to enable network storage for seamless file sharing and backup, create a media server for streaming content to Smart TVs or build a private cloud for secure remote access to your data. Use USB modems for 4G connectivity or Keenetic telephony adapter for VoIP functionality."
+            },
+            "mesh": {
+                "title": "Whole Home & Mesh Wi-Fi",
+                "description": "Say goodbye to dead zones with our Mesh Wi-Fi feature, which allows multiple units to work seamlessly together to create consistent, robust wireless coverage throughout your space."
+            },
+            "sfp": {
+                "title": "SFP slot",
+                "description": "We've included an SFP slot for fibre connectivity, ideal for businesses requiring high performance and long distance communications solutions."
+            },
+            "multiWAN": {
+                "title": "Multi-WAN",
+                "description": "Aggregate multiple Internet connections, increasing overall bandwidth and providing failover to ensure constant connectivity."
+            },
+            "vpn": {
+                "title": "Mixed-VPN clients/servers",
+                "description": "Secure your online activities and enjoy the flexibility of multiple VPN protocols. Whether you want to protect your privacy, work remotely or bypass geo-blocks, our product has you covered."
+            }
+        }
+    }
+}

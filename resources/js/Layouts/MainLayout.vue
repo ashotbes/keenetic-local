@@ -7,37 +7,19 @@
                         <li>
                             <img class="logo" src="/logo-main-new.svg" alt="Logo"/>
                         </li>
-                        <li>
-                            <a href="https://keenetic.com/en/keenetic-os">KeeneticOS</a>
-                        </li>
-                        <li>
-                            <a href="https://keenetic.com/en/home-solutions">Home Solutions</a>
-                        </li>
-                        <li>
-                            <a href="https://keenetic.com/en/business-solutions">Business Solutions</a>
-                        </li>
-                        <li>
-                            <a href="https://keenetic.com/en/keenetic-isp">ISP</a>
-                        </li>
-                        <li>
-                            <a href="https://keenetic.com/en/products">Products</a>
-                        </li>
-                        <li>
-                            <a href="https://keenetic.com/en/how-it-works">How It Works</a>
-                        </li>
-                        <li>
-                            <a href="https://help.keenetic.com/hc/en-us">Support</a>
+                        <li v-for="(item, index) in navbarKeys" :key="index">
+                            <a href="#">{{ $t(`navbar.${item}`) }}</a>
                         </li>
                         <li>
                             <div class="lang_list" ref="dropdownRef">
                                 <ul class="dropdown-list">
                                     <li>
-                                        <a href="#" @click="toggleDropdown">{{ selectedLang }}</a>
+                                        <a href="#" @click.prevent="toggleDropdown">{{ selectedLang }}</a>
                                         <div class="lang-dropdown" :class="{ show: dropdownVisible }">
                                             <ul>
-                                                <li><a @click="selectLang('FRA')">FRA</a></li>
-                                                <li><a @click="selectLang('DEU')">DEU</a></li>
-                                                <li><a @click="selectLang('ENG')">DEU</a></li>
+                                                <li v-for="language in languages" :key="language.code">
+                                                    <a href="#" @click.prevent="changeLanguage(language.code)">{{ language.label }}</a>
+                                                </li>
                                             </ul>
                                         </div>
                                     </li>
@@ -48,7 +30,6 @@
                 </nav>
             </div>
         </header>
-
     </div>
     <main>
         <slot></slot>
@@ -56,32 +37,56 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import {ref, onMounted, onUnmounted} from 'vue'
+import {useI18n} from 'vue-i18n'
+import {router} from '@inertiajs/vue3'
 
+// Получаем i18n
+const {locale} = useI18n()
+
+// Состояние для управления выпадающим меню
 const dropdownVisible = ref(false)
-const selectedLang = ref('ENG')
-
 const dropdownRef = ref(null)
 
+// Доступные языки
+const languages = [
+    {code: 'en', label: 'ENG'},
+    {code: 'fr', label: 'FRA'},
+    {code: 'de', label: 'DEU'}
+]
+
+// Язык, который сейчас выбран
+const selectedLang = ref(languages.find(lang => lang.code === locale.value)?.label || 'ENG')
+
+// Ключи навигационного меню
+const navbarKeys = ['keenetic_os', 'home_solutions', 'business_solutions', 'isp', 'products', 'how_it_works', 'support']
+
+// Переключение видимости выпадающего меню
 function toggleDropdown() {
     dropdownVisible.value = !dropdownVisible.value
 }
 
-function selectLang(lang) {
-    selectedLang.value = lang
+// Изменение языка
+function changeLanguage(lang) {
     dropdownVisible.value = false
+    locale.value = lang // Устанавливаем язык
+    selectedLang.value = languages.find(language => language.code === lang)?.label || 'ENG' // Обновляем отображаемый язык
+    router.visit(`/${lang}`); // Перезагружаем страницу с новым языком
 }
 
+// Закрытие выпадающего меню при клике вне его
 function handleClickOutside(event) {
     if (dropdownRef.value && !dropdownRef.value.contains(event.target)) {
         dropdownVisible.value = false
     }
 }
 
+// Подписываемся на события при монтировании
 onMounted(() => {
     document.addEventListener('click', handleClickOutside)
 })
 
+// Отписываемся от событий при размонтировании
 onUnmounted(() => {
     document.removeEventListener('click', handleClickOutside)
 })
@@ -103,7 +108,7 @@ ul {
     margin: 0;
 }
 
-.dropdown-list{
+.dropdown-list {
     z-index: 99;
     position: absolute;
 }

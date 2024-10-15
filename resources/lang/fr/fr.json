@@ -1,0 +1,62 @@
+{
+    "navbar": {
+        "keenetic_os": "KeeneticOS",
+        "home_solutions": "Solutions pour la maison",
+        "business_solutions": "Solutions pour les entreprises",
+        "isp": "FAI",
+        "products": "Produits",
+        "how_it_works": "Comment ça marche",
+        "support": "Assistance"
+    },
+
+    "product": {
+        "name": "Keenetic Hero",
+        "code": "KN-1011",
+        "sections": {
+            "productImage": "Image du produit",
+            "benefits": "AVANTAGES",
+            "features": "CARACTÉRISTIQUES",
+            "keeneticOS": "KEENETIC OS",
+            "images": "IMAGES",
+            "specifications": "SPÉCIFICATIONS",
+            "support": "ASSISTANCE"
+        },
+        "description": {
+            "title": "Là où la stabilité rencontre la vitesse",
+            "text": "Alimentez votre maison avec une connectivité futuriste. Un routeur Gigabit véritablement polyvalent avec Mesh Wi-Fi 6 AX1800 pour connecter des clients sans fil à des vitesses pratiques allant jusqu'à 900 Mbps, ainsi qu'un analyseur de spectre indépendant pour surveiller en continu les ondes et rechercher des canaux plus ouverts. Prêt pour la connectivité Internet en fibre via un module SFP optionnel et pour la construction d'un système Mesh Wi-Fi avec un retour Gigabit. La meilleure combinaison de fonctionnalité, de performance, de facilité d'installation et de prix pour le domicile ou les petites entreprises."
+        },
+        "features": {
+            "title": "Définissez vos limites numériques",
+            "points": [
+                "Intelligent. Sécurisé. Transparent.",
+                "Une large gamme de disques de stockage, de modems LTE et d'imprimantes peut être connectée via les ports USB 3.0 et 2.0. 512 Mo de RAM garantissent un fonctionnement stable simultané d'un serveur multimédia, d'un service IntelliQoS avec priorisation du trafic par application, et de la dernière gamme de serveurs et clients VPN, y compris IPsec et WireGuard à des vitesses allant jusqu'à 200 Mbps."
+            ]
+        },
+        "technicalFeatures": {
+            "wifi": {
+                "title": "Wi-Fi 6 AX1800",
+                "description": "Équipé de la dernière technologie Wi-Fi 6 pour des vitesses plus rapides, une capacité accrue et de meilleures performances dans des environnements denses."
+            },
+            "usb": {
+                "title": "Ports USB 3.0+2.0",
+                "description": "Faites plus avec Keenetic ! Connectez un disque USB pour activer le stockage réseau pour un partage et une sauvegarde de fichiers transparents, créez un serveur multimédia pour diffuser du contenu sur des Smart TVs ou construisez un cloud privé pour un accès sécurisé à vos données. Utilisez des modems USB pour la connectivité 4G ou l'adaptateur téléphonique Keenetic pour la fonctionnalité VoIP."
+            },
+            "mesh": {
+                "title": "Wi-Fi Whole Home & Mesh",
+                "description": "Dites adieu aux zones mortes grâce à notre fonctionnalité Mesh Wi-Fi, qui permet à plusieurs unités de fonctionner ensemble de manière transparente pour créer une couverture sans fil cohérente et robuste dans tout votre espace."
+            },
+            "sfp": {
+                "title": "Emplacement SFP",
+                "description": "Nous avons inclus un emplacement SFP pour la connectivité en fibre, idéal pour les entreprises nécessitant des solutions de communication à haute performance et longue distance."
+            },
+            "multiWAN": {
+                "title": "Multi-WAN",
+                "description": "Agréguez plusieurs connexions Internet, augmentant ainsi la bande passante globale et offrant une sauvegarde pour garantir une connectivité constante."
+            },
+            "vpn": {
+                "title": "Clients/serveurs VPN mixtes",
+                "description": "Sécurisez vos activités en ligne et profitez de la flexibilité de plusieurs protocoles VPN. Que vous souhaitiez protéger votre vie privée, travailler à distance ou contourner des blocages géographiques, notre produit est à votre service."
+            }
+        }
+    }
+}
