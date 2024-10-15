@@ -1,4 +1,6 @@
 {
     "test": "Bonjour Crowdin monde !",
-    "watcher-test": "Ceci est un test de l'accroche du spectateur"
+    "watcher-test": "Ceci est un test de l'accroche du spectateur",
+    "sometest": "This is tests of watcherasasasdask",
+    "test2": "test212"
 }
