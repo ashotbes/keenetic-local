@@ -1,3 +1,4 @@
 {
-    "test": "Hello Crowdin world!"
+    "test": "Hello Crowdin world!",
+    "watcher-test": "This is test of watcher hook"
 }
