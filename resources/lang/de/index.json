@@ -1,5 +1,5 @@
 {
     "test": "Gooten tag!",
     "watcher-test": "Dies ist Test des Beobachter-Hook",
-    "translate": "Pull request successfully merged and closed\nYou’re all set—the l10n_main2 branch can be safely deleted."
+    "translate": "Pull-Request erfolgreich zusammengeführt und geschlossen\nDu bist alles gesetzt — der l10n_main2-Branch kann sicher gelöscht werden."
 }
