@@ -2,5 +2,6 @@
     "test": "Hello Crowdin world!",
     "watcher-test": "This is test of watcher hook",
     "translate": "Pull request successfully merged and closed\nYou’re all set—the l10n_main2 branch can be safely deleted.",
-    "fox": "The quick brown fox jumps over the lazy dog"
+    "fox": "The quick brown fox jumps over the lazy dog",
+    "test2": "Last test before i18n"
 }
