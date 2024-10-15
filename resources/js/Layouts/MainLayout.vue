@@ -7,8 +7,8 @@
                         <li>
                             <img class="logo" src="/logo-main-new.svg" alt="Logo"/>
                         </li>
-                        <li v-for="(item, index) in navbarKeys" :key="index">
-                            <a href="#">{{ $t(`navbar.${item}`) }}</a>
+                        <li v-for="(key, index) in navbarKeys" :key="index">
+                            <a href="#">{{ $t(`navbar.${key}`) }}</a>
                         </li>
                         <li>
                             <div class="lang_list" ref="dropdownRef">
@@ -31,6 +31,7 @@
             </div>
         </header>
     </div>
+    <h1>{{ $t('test.test')}}</h1>
     <main>
         <slot></slot>
     </main>
@@ -39,7 +40,10 @@
 <script setup>
 import {ref, onMounted, onUnmounted} from 'vue'
 import {useI18n} from 'vue-i18n'
+const { t, messages } = useI18n();
 import {router} from '@inertiajs/vue3'
+import { computed } from 'vue';
+
 
 // Получаем i18n
 const {locale} = useI18n()
@@ -57,9 +61,6 @@ const languages = [
 
 // Язык, который сейчас выбран
 const selectedLang = ref(languages.find(lang => lang.code === locale.value)?.label || 'ENG')
-
-// Ключи навигационного меню
-const navbarKeys = ['keenetic_os', 'home_solutions', 'business_solutions', 'isp', 'products', 'how_it_works', 'support']
 
 // Переключение видимости выпадающего меню
 function toggleDropdown() {
@@ -90,6 +91,9 @@ onMounted(() => {
 onUnmounted(() => {
     document.removeEventListener('click', handleClickOutside)
 })
+
+const navbarKeys = computed(() => Object.keys(messages.value[locale.value].navbar));
+
 </script>
 
 <style scoped>
