@@ -30,17 +30,14 @@
                         </li>
                         <li>
                             <div class="lang_list" ref="dropdownRef">
-                                <ul>
+                                <ul class="dropdown-list">
                                     <li>
                                         <a href="#" @click="toggleDropdown">{{ selectedLang }}</a>
                                         <div class="lang-dropdown" :class="{ show: dropdownVisible }">
                                             <ul>
-                                                <li><a @click="selectLang('ENG')">ENG</a></li>
-                                                <li><a @click="selectLang('ESP')">ESP</a></li>
                                                 <li><a @click="selectLang('FRA')">FRA</a></li>
-                                                <li><a @click="selectLang('POL')">POL</a></li>
-                                                <li><a @click="selectLang('ITA')">ITA</a></li>
                                                 <li><a @click="selectLang('DEU')">DEU</a></li>
+                                                <li><a @click="selectLang('ENG')">DEU</a></li>
                                             </ul>
                                         </div>
                                     </li>
@@ -97,13 +94,18 @@ onUnmounted(() => {
     background: lightblue;
     max-width: 1460px;
     margin: 0 auto;
-    padding-top: 12px;
+    padding-top: 20px;
 }
 
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+.dropdown-list{
+    z-index: 99;
+    position: absolute;
 }
 
 a {
@@ -124,7 +126,6 @@ a {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    align-items: center;
 }
 
 .lang_list {
