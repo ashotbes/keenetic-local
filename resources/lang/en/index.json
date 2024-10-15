@@ -1,4 +1,8 @@
 {
     "test": "Hello Crowdin world!",
-    "watcher-test": "This is test of watcher hook"
+    "watcher-test": "This is test of watcher hook",
+    "benefit1": "Equipped with the latest Wi-Fi 6 technology for faster speeds, increased capacity and better performance in dense environments.",
+    "benefit2": "Do more with Keenetic! Connect a USB drive to enable network storage for seamless file sharing and backup, create a media server for streaming content to Smart TVs or build a private cloud for secure remote access to your data. Use USB modems for 4G connectivity or Keenetic telephony adapter for VoIP functionality.",
+    "benefit3": "Say goodbye to dead zones with our Mesh Wi-Fi feature, which allows multiple units to work seamlessly together to create consistent, robust wireless coverage throughout your space."
+    "benefit4": "asdasdasasdasdahshdasjdasdasd321"
 }
