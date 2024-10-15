@@ -1,4 +1,6 @@
 {
     "test": "Gooten tag!",
-    "watcher-test": "Dies ist Test des Beobachter-Hook"
+    "watcher-test": "Dies ist Test des Beobachter-Hook",
+    "sometest": "This is tests of watcherasasasdask",
+    "test2": "test212"
 }
