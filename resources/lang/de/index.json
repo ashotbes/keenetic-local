@@ -1,3 +1,4 @@
 {
-    "test": "Gooten tag!"
+    "test": "Gooten tag!",
+    "watcher-test": "Dies ist Test des Beobachter-Hook"
 }
