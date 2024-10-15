@@ -1,6 +1,5 @@
 {
     "test": "Bonjour Crowdin monde !",
     "watcher-test": "Ceci est un test de l'accroche du spectateur",
-    "sometest": "This is tests of watcherasasasdask",
-    "test2": "test212"
+    "translate": "Pull request successfully merged and closed\nYou’re all set—the l10n_main2 branch can be safely deleted."
 }
