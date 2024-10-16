@@ -31,7 +31,6 @@
             </div>
         </header>
     </div>
-    <h1></h1>
     <main>
         <slot></slot>
     </main>

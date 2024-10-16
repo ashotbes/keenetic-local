@@ -29,13 +29,6 @@ const features = [
 
 <template>
     <MainLayout :navbar-items="navbarList">
-<!--        <h1>Test</h1>-->
-<!--        <h2>{{ navbarList}}</h2>-->
-<!--        <div v-for="(navbarItem, key) in navbarList">-->
-<!--            {{ $t(`navbar.${key}`) }}-->
-<!--        </div>-->
-
-
         <div v-for="product in products" :key="product.id" class="product-item">
             <div class="details">
                 <p class="product-title">{{ product.Title }}</p>

@@ -1,7 +1,4 @@
 {
-    "test": {
-        "hello": "Hello World"
-    },
     "navbar": {
         "List_item_1": "KeeneticOS",
         "List_item_2": "Home Solutions",
