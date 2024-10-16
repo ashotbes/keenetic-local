@@ -2,9 +2,15 @@
 import MainLayout from "../Layouts/MainLayout.vue";
 import ProductNavBar from "../Components/ProductNavBar.vue";
 import BenefitsBlock from "../Components/BenefitsBlock.vue";
+import {useI18n} from "vue-i18n";
+const { t, messages } = useI18n();
 
 defineProps({
     products: {
+        type: Array,
+        required: false
+    },
+    navbarList:{
         type: Array,
         required: false
     }
@@ -22,7 +28,7 @@ const features = [
 </script>
 
 <template>
-    <MainLayout>
+    <MainLayout :navbar-items="navbarList">
         <div v-for="product in products" :key="product.id" class="product-item">
             <div class="details">
                 <p class="product-title">{{ product.Title }}</p>

@@ -7,7 +7,7 @@
                         <li>
                             <img class="logo" src="/logo-main-new.svg" alt="Logo"/>
                         </li>
-                        <li v-for="(key, index) in navbarKeys" :key="index">
+                        <li v-for="(navbarItem, key) in props.navbarItems">
                             <a href="#">{{ $t(`navbar.${key}`) }}</a>
                         </li>
                         <li>
@@ -42,6 +42,13 @@ import {useI18n} from 'vue-i18n'
 const { t, messages } = useI18n();
 import {router} from '@inertiajs/vue3'
 import { computed } from 'vue';
+
+
+const props = defineProps({
+    navbarItems: Array
+})
+
+console.log(props)
 
 
 // Получаем i18n
