@@ -1,12 +1,12 @@
 {
     "navbar": {
-        "keenetic_os": "KeeneticOS",
-        "home_solutions": "Solutions pour la maison",
-        "business_solutions": "Solutions d'affaires",
-        "isp": "FAI",
-        "products": "Produits",
-        "how_it_works": "Comment ça marche",
-        "support": "Soutien"
+        "List_item_1": "KeeneticOS",
+        "List_item_2": "Home Solutions",
+        "List_item_3": "Business Solutions",
+        "List_item_4": "ISP",
+        "List_item_5": "Products",
+        "List_item_6": "How It Works",
+        "List_item_7": "Support"
     },
     "product": {
         "name": "Héros Keenetic",
