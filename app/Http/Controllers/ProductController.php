@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Exception;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Storage;
+use function Fuse\Helpers\get;
 
 class ProductController extends Controller
 {
@@ -24,6 +25,13 @@ class ProductController extends Controller
     {
         try {
             $response = Http::withToken($this->apiToken)->get($this->apiUrl);
+            $navbarList = Http::get('http://0.0.0.0:8055/items/Navbar_List');
+
+            if ($navbarList->successful()) {
+                $navbarList = array_slice($navbarList->json('data')[0],2);
+            } else {
+                $navbarList = [];
+            }
 
             if ($response->successful()) {
                 $products = $response->json('data');
@@ -43,7 +51,11 @@ class ProductController extends Controller
                     }
                 }
 
-                return inertia('App', ['products' => $products]);
+                return inertia('App', [
+                    'products' => $products,
+                    'navbarList' => $navbarList
+                ]);
+
             } else {
                 return inertia('ErrorPage', ['message' => 'Failed to fetch products']);
             }

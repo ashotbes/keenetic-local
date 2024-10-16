@@ -1,14 +1,10 @@
 import {createI18n, useI18n} from 'vue-i18n';
 import en from './resources/lang/en/en.json';
-import sometest from '/resources/lang/en/sometest.json'
 import fr from './resources/lang/fr/fr.json';
 import de from './resources/lang/de/de.json';
 
 const messages = {
-    en: {
-        ...en,
-        test: sometest
-    },
+    en,
     fr,
     de,
 };
@@ -20,6 +16,7 @@ const locale = validLocales.includes(urlLocale) ? urlLocale : 'en'; // Если 
 const i18n = createI18n({
     locale,
     messages,
+    legacy: false
 });
 
 export default i18n;

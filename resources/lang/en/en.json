@@ -1,12 +1,15 @@
 {
+    "test": {
+        "hello": "Hello World"
+    },
     "navbar": {
-        "keenetic_os": "KeeneticOS",
-        "home_solutions": "Home Solutions",
-        "business_solutions": "Business Solutions",
-        "isp": "ISP",
-        "products": "Products",
-        "how_it_works": "How It Works",
-        "support": "Support"
+        "List_item_1": "KeeneticOS",
+        "List_item_2": "Home Solutions",
+        "List_item_3": "Business Solutions",
+        "List_item_4": "ISP",
+        "List_item_5": "Products",
+        "List_item_6": "How It Works",
+        "List_item_7": "Support"
     },
     "product": {
         "name": "Keenetic Hero",
