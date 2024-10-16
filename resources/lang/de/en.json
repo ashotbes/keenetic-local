@@ -1,12 +1,12 @@
 {
     "navbar": {
-        "keenetic_os": "KeeneticOS",
-        "home_solutions": "Heim-Lösungen",
-        "business_solutions": "Unternehmenslösungen",
-        "isp": "ISP",
-        "products": "Produkte",
-        "how_it_works": "So funktioniert es",
-        "support": "Unterstützung"
+        "List_item_1": "KeeneticOS",
+        "List_item_2": "Heim-Lösungen",
+        "List_item_3": "Unternehmenslösungen",
+        "List_item_4": "ISP",
+        "List_item_5": "Products",
+        "List_item_6": "How It Works",
+        "List_item_7": "Support"
     },
     "product": {
         "name": "Keenetischer Held",
